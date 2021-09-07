@@ -1,0 +1,18 @@
+<h1>Celebrities Page</h1>
+
+{{#each celebrities}}
+<div>
+    <h2>
+        Artist:
+        <a href="/celebrities/{{_id}}"> {{name}}</a>
+    </h2>
+
+    <a href="/celebrities/delete/{{_id}}">
+        Delete
+    </a>
+
+    <a href="/celebrities/edit/{{_id}}">
+        Edit
+    </a>
+
+    {{/each}}
